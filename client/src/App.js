@@ -5,14 +5,32 @@ import "./App.css";
 function App() {
   return (
   <section class="section">
+    
       <div className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <h2>GLITTER</h2>
       </div>
 
-      <p class="subtitle">
+    <div class="columns">
+
+      <div class="column">
         My first website with <strong>Bulma</strong>!
-      </p>
+      </div>
+
+      <div class="column">
+        Second column
+      </div>
+
+      <div class="column">
+        Third column
+      </div>
+
+      <div class="column">
+        Fourth column
+      </div>
+
+  </div>
+
   </section>
   );
 }
