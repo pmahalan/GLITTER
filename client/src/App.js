@@ -4,34 +4,15 @@ import "./App.css";
 
 function App() {
   return (
-  <section class="section">
-    
+    <div className="App">
       <div className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <h2>GLITTER</h2>
+        <img src={logo} className="App-logo" alt="logo" />
+        <h2>Welcome to React</h2>
       </div>
-
-    <div class="columns">
-
-      <div class="column">
-        My first website with <strong>Bulma</strong>!
-      </div>
-
-      <div class="column">
-        Second column
-      </div>
-
-      <div class="column">
-        Third column
-      </div>
-
-      <div class="column">
-        Fourth column
-      </div>
-
-  </div>
-
-  </section>
+      <p className="App-intro">
+        To get started, edit <code>src/App.js</code> and save to reload.
+      </p>
+    </div>
   );
 }
 
