@@ -22,7 +22,7 @@ function App() {
   </div>
 
 
-<button class="button">
+{/* <button class="button">
   Button
 </button>
 
@@ -36,7 +36,7 @@ function App() {
 
 <button class="button is-loading">
   Loading button
-</button>
+</button> */}
 
 
 </div>
