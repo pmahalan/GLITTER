@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .App-logo {
@@ -21,4 +23,12 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.widget1 {
+  border: 1px solid black;
+}
+
+.widget2 {
+  border: 1px solid black;
 }
