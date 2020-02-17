@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
-  <div className="App">
+  <div className="App" id="wholebackground">
 
   <div className="App-header">
     <h2>Glitter!</h2>
