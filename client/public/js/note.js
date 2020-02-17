@@ -40,8 +40,12 @@ $("#note-submit").on("click", function(event) {
       });
   
     // Empty each input box by replacing the value with an empty string
-    $("#author").val("");
-    $("#chirp-box").val("");
+    $("place").val("");
+    $("timeofyear").val("");
+    $("cuisine").val("");
+    $("thingstodo").val("");
+    $("landmarks").val("");
+
   });
   
   // When the page loads, grab all of our chirps
