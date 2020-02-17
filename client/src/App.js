@@ -12,16 +12,8 @@ function App() {
 
 
   <div class="columns">
-      <div class="column is-one-fifth">
-      Lorem ipsum dolor sit amet
-      </div>
-
-      <div class="column is-one-fifth">
-      Lorem ipsum dolor sit amet
-      </div>
-
-      <div class="column is-three-fifths">
-      Lorem ipsum dolor sit amet
+      <div class="column" id="welcome">
+      Welcome to Glitter, your space to dream and simply be inspired.
       </div>
   </div>
 

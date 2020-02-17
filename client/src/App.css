@@ -13,9 +13,9 @@
   background-image: url("confetti.gif");
   height: 150px;
   padding: 20px;
-  color: black;
+  color:#422F66;
   font-family: 'Playfair Display', serif;
-  font-size: 72px;
+  font-size: 86px;
 }
 
 .App-intro {
@@ -27,8 +27,12 @@
   to { transform: rotate(360deg); }
 }
 
-.column {
-  border: 1px solid black;
+
+#welcome {
+  color:#422F66;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+
 }
 
 .column is-one-quarter {
