@@ -25,10 +25,22 @@
   to { transform: rotate(360deg); }
 }
 
-.widget1 {
+.column {
   border: 1px solid black;
 }
 
-.widget2 {
+.column is-one-quarter {
   border: 1px solid black;
+}
+
+.column is-one-fifth {
+  border: 1px solid black;
+}
+
+.column is-three-fifths {
+  border: 1px solid black;
+}
+
+.columns {
+  margin-top: 20px;
 }
