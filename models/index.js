@@ -1,4 +1,4 @@
 module.exports = {
-    Note: require("./notemodel")
+    Note: require("./note")
   };
   
