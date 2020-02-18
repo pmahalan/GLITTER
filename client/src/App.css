@@ -36,7 +36,9 @@
   text-align: center;
 }
 
-#notes {
+#note-area {
+  background-color: lightblue;
+  opacity: 0.5;
 
 }
 
@@ -57,4 +59,12 @@
   margin-top: 20px;
   color:#4D3409;
   font-family: 'Playfair Display', serif;
+}
+
+#noteslabel {
+  font-size: 30px;
+}
+
+.form-control {
+  width: 500px;
 }
