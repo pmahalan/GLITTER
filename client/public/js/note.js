@@ -25,7 +25,8 @@ $("#note-submit").on("click", function(event) {
       .then(function() {
   
         var row = $("<div>");
-        row.addClass("note");
+        row.addClass("note-area");
+        // "note-area" corresponds with line 22 of App.js.
   
         row.append("<p>" + newNote.place + "</p>");
         row.append("<p>" + newNote.timeofyear + "</p>");

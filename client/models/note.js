@@ -7,6 +7,7 @@ var Sequelize = require("sequelize");
 var sequelize = require("../config/connection");
 
 // Creates a "Note" model that matches up with DB
+// "note" ON LINE ELEVEN IS ASSOCIATED WITH THE ROWS IN YOUR MYSQL TABLE.
 var Note = sequelize.define("note", {
   place: Sequelize.STRING,
   timeofyear: Sequelize.STRING,
