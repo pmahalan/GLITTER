@@ -6,33 +6,35 @@ import React, { useEffect, useState } from "react";
 //import { List, ListItem } from "../../components/List";
 //import { Input, TextArea, FormBtn } from "../../components/Form";
 
-function Books() {
+function Notes() {
   // Setting our component's initial state
-  const [books, setBooks] = useState([])
+  const [notes, setNotes] = useState([])
   const [formObject, setFormObject] = useState({
-    title: "",
-    author: "",
-    synopsis: ""
+    destination: "",
+    season: "",
+    food: "",
+    activities: "",
+    sights: ""
   })
 
   // Load all books and store them with setBooks
   useEffect(() => {
-    loadBooks()
+    loadNotes()
   }, [])
 
   // Loads all books and sets them to books
-  function loadBooks() {
-    API.getBooks()
+  function loadNotes() {
+    API.getNotes()
       .then(res => 
-        setBooks(res.data)
+        setNotes(res.data)
       )
       .catch(err => console.log(err));
   };
 
   // Deletes a book from the database with a given id, then reloads books from the db
-  function deleteBook(id) {
-    API.deleteBook(id)
-      .then(res => loadBooks())
+  function deleteNote(id) {
+    API.deleteNote(id)
+      .then(res => loadNotes())
       .catch(err => console.log(err));
   }
 
@@ -47,17 +49,21 @@ function Books() {
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.title && formObject.author) {
-      API.saveBook({
-        title: formObject.title,
-        author: formObject.author,
-        synopsis: formObject.synopsis
+      API.saveNote({
+        destination: formObject.destination,
+        season: formObject.season,
+        food: formObject.food,
+        activities: formObject.activities,
+        sights: formObject.sights
       })
         .then(() => setFormObject({
-          title: "",
-          author: "",
-          synopsis: ""
+            destination: "",
+            season: "",
+            food: "",
+            activities: "",
+            sights: ""
         }))
-        .then(() => loadBooks())
+        .then(() => loadNotes())
         .catch(err => console.log(err));
     }
   };
@@ -67,50 +73,67 @@ function Books() {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>What Books Should I Read?</h1>
+              <h1>Your Notes</h1>
             </Jumbotron>
             <form>
+
               <Input
                 onChange={handleInputChange}
-                name="title"
-                placeholder="Title (required)"
-                value={formObject.title}
+                name="destination"
+                placeholder="Where woud you go right now if you could?"
+                value={formObject.destination}
               />
+
               <Input
                 onChange={handleInputChange}
-                name="author"
-                placeholder="Author (required)"
-                value={formObject.author}
+                name="season"
+                placeholder="Summer, Spring, Fall, Winter, or all four?"
+                value={formObject.season}
+              />
+
+              <TextArea
+                onChange={handleInputChange}
+                name="food"
+                placeholder="Sushi? Poutine? Tiramisu? Escargo?"
+                value={formObject.food}
               />
               <TextArea
                 onChange={handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (Optional)"
-                value={formObject.synopsis}
+                name="activities"
+                placeholder="Spa day? Catch up with friends? Museum tours?"
+                value={formObject.activities}
+              />
+            <TextArea
+                onChange={handleInputChange}
+                name="sights"
+                placeholder="Volcanoes, pyramids, Eiffel Tower, Taj Mahal..."
+                value={formObject.sights}
               />
               <FormBtn
-                disabled={!(formObject.author && formObject.title)}
+                disabled={!(formObject.destination)}
                 onClick={handleFormSubmit}
               >
-                Submit Book
+                Submit Note
               </FormBtn>
+
             </form>
           </Col>
+
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Books On My List</h1>
+              <h1>Your Notes</h1>
             </Jumbotron>
-            {books.length ? (
+            {notes.length ? (
               <List>
-                {books.map(book => {
+                {notes.map(note => {
                   return (
-                    <ListItem key={book._id}>
-                      <a href={"/books/" + book._id}>
-                        <strong>
-                          {book.title} by {book.author}
-                        </strong>
+                    <ListItem key={note._id}>
+                      <a href={"/notes/" + note._id}>
+                        {/* <strong>
+                          {note.title} by {note.author}
+                        </strong> */}
                       </a>
-                      <DeleteBtn onClick={() => deleteBook(book._id)} />
+                      <DeleteBtn onClick={() => deleteNote(note._id)} />
                     </ListItem>
                   );
                 })}
