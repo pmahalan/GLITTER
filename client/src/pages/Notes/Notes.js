@@ -17,12 +17,12 @@ function Notes() {
     sights: ""
   })
 
-  // Load all books and store them with setBooks
+  // Load all notes and store them with setNotes
   useEffect(() => {
     loadNotes()
   }, [])
 
-  // Loads all books and sets them to books
+  // Loads all notes and sets them to notes
   function loadNotes() {
     API.getNotes()
       .then(res => 
@@ -31,7 +31,7 @@ function Notes() {
       .catch(err => console.log(err));
   };
 
-  // Deletes a book from the database with a given id, then reloads books from the db
+  // Deletes a note from the database with a given id, then reloads notes from the db
   function deleteNote(id) {
     API.deleteNote(id)
       .then(res => loadNotes())
