@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Notes from "../src/pages/Notes"
 
 function App() {
   return (
@@ -15,15 +16,16 @@ function App() {
       </div>
   </div>
 
+  <Notes />
 
 {/* begin columns-in-thirds! */}
-  <div className="columns">
+  {/* <div className="columns"> */}
 
     {/* first one */}
-    <div className="column is-one-third"> Don't know where you want to go? Roll the dice!</div>
+    {/* <div className="column is-one-third"> Don't know where you want to go? Roll the dice!</div> */}
 
     {/* second one */}
-    <div className="column is-one-third" id="new-note-area"> 
+    {/* <div className="column is-one-third" id="new-note-area"> 
         <p id="noteslabel"> New Vacay Ideas </p>
         <p id="aspect"> Destination </p>
         <input className="form-control" type="text" id="place" placeholder="Where woud you go right now if you could?"></input>
@@ -41,15 +43,17 @@ function App() {
         <input className="form-control" type="text" id="landmarks" placeholder="Volcanoes, pyramids, Eiffel Tower, Taj Mahal..."></input>
         <br></br>        
         <button id="note-submit" className="button">Submit!</button>
-    </div>
+    </div> */}
 
     {/* third one */}
-    <div className="column is-one-third" id="old-note-area"> 
+    {/* <div className="column is-one-third" id="old-note-area"> 
        <p id="noteslabel"> Your Notes </p>
-    </div>  
+    </div>   */}
 
   {/* end columns-in-thirds. */}
-  </div>
+  {/* </div> */}
+
+
 
 
 {/* DO NOT DELETE THE CLOSING DIV TAG BELOW, NO MATTER WHAT. */}
