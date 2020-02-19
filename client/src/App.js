@@ -4,6 +4,7 @@ import Notes from "../src/pages/Notes"
 
 function App() {
   return (
+  
   <div className="App" id="wholebackground">
 
   <div className="App-header">
@@ -16,7 +17,7 @@ function App() {
       </div>
   </div>
 
-  <Notes />
+ <Notes />
 
 {/* begin columns-in-thirds! */}
   {/* <div className="columns"> */}
@@ -58,8 +59,8 @@ function App() {
 
 {/* DO NOT DELETE THE CLOSING DIV TAG BELOW, NO MATTER WHAT. */}
 </div>
+
   );
 }
-
 
 export default App;
