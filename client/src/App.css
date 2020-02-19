@@ -36,7 +36,7 @@
   text-align: center;
 }
 
-#note-area {
+#new-note-area {
   background-color: lightblue;
   opacity: 0.5;
 
@@ -66,5 +66,5 @@
 }
 
 .form-control {
-  width: 500px;
+  width: 400px;
 }
