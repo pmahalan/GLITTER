@@ -44,7 +44,7 @@ function Notes() {
     setFormObject({...formObject, [name]: value})
   };
 
-  // When the form is submitted, use the API.saveBook method to save the book data
+  // When the form is submitted, use the API.saveNote method to save the note data
   // Then reload books from the database
   function handleFormSubmit(event) {
     event.preventDefault();
@@ -69,9 +69,9 @@ function Notes() {
   };
 
     return (
-      <Container fluid>
+      <Container>
         <Row>
-          <Col size="md-6">
+          <Col>
             <Jumbotron>
               <h1>Your Notes</h1>
             </Jumbotron>
@@ -119,7 +119,7 @@ function Notes() {
             </form>
           </Col>
 
-          <Col size="md-6 sm-12">
+          <Col>
             <Jumbotron>
               <h1>Your Notes</h1>
             </Jumbotron>
