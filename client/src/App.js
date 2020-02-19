@@ -17,12 +17,12 @@ function App() {
 
 
 {/* begin columns-in-thirds! */}
-
-
   <div className="columns">
 
+    {/* first one */}
     <div className="column is-one-third"> Don't know where you want to go? Roll the dice!</div>
 
+    {/* second one */}
     <div className="column is-one-third" id="new-note-area"> 
         <p id="noteslabel"> New Vacay Ideas </p>
         <p id="aspect"> Destination </p>
@@ -43,12 +43,14 @@ function App() {
         <button id="note-submit" className="button">Submit!</button>
     </div>
 
+    {/* third one */}
     <div className="column is-one-third" id="old-note-area"> 
        <p id="noteslabel"> Your Notes </p>
     </div>  
 
+  {/* end columns-in-thirds. */}
   </div>
-  
+
 
 {/* DO NOT DELETE THE CLOSING DIV TAG BELOW, NO MATTER WHAT. */}
 </div>
