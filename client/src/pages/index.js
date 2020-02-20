@@ -79,31 +79,31 @@ function Notes() {
         <div className="column is-one-third" id="new-note-area">
         <h1 id="yournotesheading">Vacay Ideas</h1>
           <form>
-             <TextArea id="textfield"
+             <TextArea id="textfield" className="column is-full"
                onChange={handleInputChange}
                name="destination"
                placeholder="Where woud you go right now if you could?"
                value={formObject.destination}
             />
-             <TextArea id="textfield"
+             <TextArea id="textfield" className="column is-full"
               onChange={handleInputChange}
               name="season"
                placeholder="Summer, Spring, Fall, Winter, or all four?"
                value={formObject.season}
              />
-             <TextArea id="textfield"
+             <TextArea id="textfield" className="column is-full"
                onChange={handleInputChange}
                name="food"
                placeholder="Sushi? Poutine? Tiramisu? Escargo?"
                value={formObject.food}
              />
-             <TextArea id="textfield"
+             <TextArea id="textfield" className="column is-full"
                onChange={handleInputChange}
                name="activities"
                placeholder="Spa day? Catch up with friends? Museum tours?"
                value={formObject.activities}
              />
-           <TextArea id="textfield"
+           <TextArea id="textfield" className="column is-full"
                onChange={handleInputChange}
                name="sights"
                placeholder="Volcanoes, pyramids, Eiffel Tower, Taj Mahal..."
