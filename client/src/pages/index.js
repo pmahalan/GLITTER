@@ -73,7 +73,12 @@ function Notes() {
         <div className="columns"> 
 
         {/* first one */}
-        <div className="column is-one-third" id="funstuff"> Don't know where you want to go? Roll the dice!</div>
+        <div className="column is-one-third" id="funstuff"> 
+        <h1 id="yournotesheading">Other Fun Stuff</h1>
+        </div>
+
+
+
 
         {/* second one */}
         <div className="column is-one-third" id="new-note-area">
@@ -85,32 +90,37 @@ function Notes() {
                placeholder="Where woud you go right now if you could?"
                value={formObject.destination}
             />
+            <br></br>
              <TextArea id="textfield" className="column is-full"
               onChange={handleInputChange}
               name="season"
                placeholder="Summer, Spring, Fall, Winter, or all four?"
                value={formObject.season}
              />
+             <br></br>
              <TextArea id="textfield" className="column is-full"
                onChange={handleInputChange}
                name="food"
                placeholder="Sushi? Poutine? Tiramisu? Escargo?"
                value={formObject.food}
              />
+             <br></br>
              <TextArea id="textfield" className="column is-full"
                onChange={handleInputChange}
                name="activities"
                placeholder="Spa day? Catch up with friends? Museum tours?"
                value={formObject.activities}
              />
+             <br></br>
            <TextArea id="textfield" className="column is-full"
                onChange={handleInputChange}
                name="sights"
                placeholder="Volcanoes, pyramids, Eiffel Tower, Taj Mahal..."
                value={formObject.sights}
              /> 
+             <br></br>
 
-            <FormBtn
+            <FormBtn class="button is-medium"
               disabled={!(formObject.destination)}
               onClick={handleFormSubmit}
             >
@@ -129,10 +139,19 @@ function Notes() {
                   <ListItem key={note._id}>
                     <a href={"/notes/" + note._id}>
                       <strong>
-                        {note.destination} 
+                      <DeleteBtn onClick={() => deleteNote(note._id)} />  {note.destination}
                       </strong>
+                      <br></br>
+                      {note.season} 
+                      <br></br>
+                      {note.food} 
+                      <br></br>
+                      {note.activities} 
+                      <br></br>
+                      {note.sights} 
+                      <br></br>
                     </a>
-                    <DeleteBtn onClick={() => deleteNote(note._id)} />
+                    <br></br>
                   </ListItem>
                 );
               })}
