@@ -3,7 +3,7 @@ import "./style.css";
 import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/API";
 import { List, ListItem } from "../../components/List";
-import { Input, TextArea, FormBtn } from "../../components/Form";
+import { TextArea, FormBtn } from "../../components/Form";
 
 function Notes() {
 //   Setting our component's initial state
@@ -44,10 +44,10 @@ function Notes() {
   };
 
   // When the form is submitted, use the API.saveNote method to save the note data
-  // Then reload books from the database
+  // Then reload notes from the database
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.title && formObject.author) {
+    if (formObject.destination) {
       API.saveNote({
         destination: formObject.destination,
         season: formObject.season,

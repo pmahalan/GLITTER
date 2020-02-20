@@ -9,6 +9,6 @@ const noteSchema = new Schema({
     sights: String
   });
   
-  const Note = mongoose.model("Book", noteSchema);
+  const Note = mongoose.model("Note", noteSchema);
   
   module.exports = Note;
