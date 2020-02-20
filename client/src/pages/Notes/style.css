@@ -1,3 +1,15 @@
 #textfield {
     height: 50px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    color:#4D3409;
+}
+
+#yournotesheading {
+    font-size: 36px;
+}
+
+#old-note-area {
+    background-color: plum;
+     opacity: 0.7; 
 }

@@ -78,6 +78,7 @@ function Notes() {
 
         {/* second one */}
         <div className="column is-one-third" id="new-note-area">
+        <h1 id="yournotesheading">Vacay Ideas</h1>
           <form>
              <TextArea id="textfield"
                onChange={handleInputChange}
@@ -121,7 +122,7 @@ function Notes() {
 
        {/* third one */}
         <div className="column is-one-third" id="old-note-area">
-            <h1>Your Notes</h1>
+            <h1 id="yournotesheading">Your Notes</h1>
           {notes.length ? (
             <List>
               {notes.map(note => {
