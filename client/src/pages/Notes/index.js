@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./style.css";
 import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/API";
 import { List, ListItem } from "../../components/List";
@@ -78,31 +79,31 @@ function Notes() {
         {/* second one */}
         <div className="column is-one-third" id="new-note-area">
           <form>
-             <Input
+             <TextArea id="textfield"
                onChange={handleInputChange}
                name="destination"
                placeholder="Where woud you go right now if you could?"
                value={formObject.destination}
             />
-             <TextArea
+             <TextArea id="textfield"
               onChange={handleInputChange}
               name="season"
                placeholder="Summer, Spring, Fall, Winter, or all four?"
                value={formObject.season}
              />
-             <TextArea
+             <TextArea id="textfield"
                onChange={handleInputChange}
                name="food"
                placeholder="Sushi? Poutine? Tiramisu? Escargo?"
                value={formObject.food}
              />
-             <TextArea
+             <TextArea id="textfield"
                onChange={handleInputChange}
                name="activities"
                placeholder="Spa day? Catch up with friends? Museum tours?"
                value={formObject.activities}
              />
-           <TextArea
+           <TextArea id="textfield"
                onChange={handleInputChange}
                name="sights"
                placeholder="Volcanoes, pyramids, Eiffel Tower, Taj Mahal..."
