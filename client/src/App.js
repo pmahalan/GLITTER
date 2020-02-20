@@ -8,7 +8,7 @@ function App() {
   <div className="App" id="wholebackground">
 
       <div className="App-header">
-        <h2>Glitter!</h2>
+        <p>G L I T T E R</p>
       </div>
 
       <div className="columns">

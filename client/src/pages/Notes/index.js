@@ -74,7 +74,7 @@ function Notes() {
         <div className="columns"> 
 
         {/* first one */}
-        <div className="column is-one-third"> Don't know where you want to go? Roll the dice!</div>
+        <div className="column is-one-third" id="funstuff"> Don't know where you want to go? Roll the dice!</div>
 
         {/* second one */}
         <div className="column is-one-third" id="new-note-area">

@@ -10,13 +10,13 @@
 }
 
 .App-header {
-  background-image: url("transparent4.gif");
-  height: 150px;
+  background-image: url("option1.gif");
+  height: 200px;
   padding: 20px;
   color:#4D3409;
-  font-family: 'Playfair Display', serif;
   font-size: 86px;
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .App-intro {
@@ -31,13 +31,15 @@
 
 #welcome {
   color: #4D3409;
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 24px;
   text-align: center;
 }
 
 #new-note-area {
-  background-color: lightblue;
+  /* background-color:	#D7EDEB */
+  background-color: gold
   /* opacity: 0.5; */
 
 }
@@ -58,7 +60,8 @@
 .columns {
   margin-top: 20px;
   color:#4D3409;
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #noteslabel {
@@ -66,5 +69,5 @@
 }
 
 .form-control {
-  width: 400px;
+  width: 375px;
 }
