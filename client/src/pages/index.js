@@ -137,7 +137,7 @@ function Notes() {
               {notes.map(note => {
                 return (
                   <ListItem key={note._id}>
-                    <a href={"/notes/" + note._id}>
+                    <a href={"/notes/" + note._id} id="linkcolors">
                       <strong>
                       <DeleteBtn onClick={() => deleteNote(note._id)} />  {note.destination}
                       </strong>
