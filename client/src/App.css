@@ -38,23 +38,8 @@
 }
 
 #new-note-area {
-  /* background-color:	#D7EDEB */
   background-color: gold
-  /* opacity: 0.5; */
 
-}
-
-.column is-one-quarter {
-  border: 1px solid black;
-  background-color: chocolate;
-}
-
-.column is-one-fifth {
-  border: 1px solid black;
-}
-
-.column is-three-fifths {
-  border: 1px solid black;
 }
 
 .columns {
@@ -70,4 +55,26 @@
 
 .form-control {
   width: 375px;
+  /* display: flex; */
+}
+
+#textfield {
+  height: 50px;
+  font-size: 16px;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:#4D3409;
+}
+
+#yournotesheading {
+  font-size: 36px;
+}
+
+#old-note-area {
+  /* background-color: #FFF1F6; */
+  background-color:#F5E4DE; 
+}
+
+#funstuff {
+    background-color:	#D7EDEB 
 }

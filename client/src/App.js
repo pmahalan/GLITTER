@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Notes from "../src/pages/Notes"
+import Notes from "./pages/index"
 
 function App() {
   return (
