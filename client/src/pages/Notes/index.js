@@ -67,7 +67,8 @@ function Notes() {
   };
 
     return (
-      <container>
+      <div id="parent">
+
         {/* begin columns-in-thirds! */}
         <div className="columns"> 
 
@@ -143,7 +144,7 @@ function Notes() {
     {/* end columns-in-thirds. */}
     </div>
 
-    </container>
+    </div>
     );
   }
 
