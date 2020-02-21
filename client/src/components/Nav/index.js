@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./style.css";
+// import "./style.css";
 // import Login from "../LoginForm";
 import AuthButton from "../AuthButton";
 //I want to add some basic inline styling here, even though we are bringing in styles
@@ -31,7 +31,7 @@ class Nav extends Component {
     window.addEventListener("resize", this.updateWidth);
   }
 
-  componentWillUnMount() {
+  componentWillUnmount() {
     window.removeEventListener("resize", this.updateWidth);
   }
 

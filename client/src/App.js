@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import "./App.css";
 import Notes from "./pages/ProtectedRoute";
+import Nav from "./components/Nav";
 import Auth from "./utils/Auth";
 import Login from "./components/Login";
 import {Container} from "./components/Grid";
@@ -38,15 +39,12 @@ function App() {
 				<Switch>
 					<Route path="/login" component={Login}/>
 					<Route path="/register" component={Register}/>
-					<PrivateRoute path="/protected" component={ProtectedRoute}/>
+					<Notes path="/protected" component={Notes}/>
 					{/* <Route component={NoMatch} /> */}
 				</Switch>
 			</Container>
 		</div>
 	</Router>
-
-
-{/* <Notes /> */}
 
 {/* DO NOT DELETE THE CLOSING DIV TAG BELOW, NO MATTER WHAT. */}
 </div>
