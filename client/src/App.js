@@ -13,6 +13,9 @@ import Login from "./components/Login";
 import {Container} from "./components/Grid";
 import Register from "./components/Register";
 
+//now we have all the stuff we need, 
+// let's render the components for the public login/account creation page.
+
 function App() {
   return (
   
@@ -28,6 +31,19 @@ function App() {
           </div>
       </div>
 
+  <Router>
+		<div>
+      <Nav className="App-header"/>
+			<Container>
+				<Switch>
+					<Route path="/login" component={Login}/>
+					<Route path="/register" component={Register}/>
+					<PrivateRoute path="/protected" component={ProtectedRoute}/>
+					{/* <Route component={NoMatch} /> */}
+				</Switch>
+			</Container>
+		</div>
+	</Router>
 
 
 {/* <Notes /> */}
