@@ -67,6 +67,13 @@ function Notes() {
     }
   };
 
+  function GetValue() {
+    var myarray= new Array("item1","item2","item3");
+    var random = myarray[Math.floor(Math.random() * myarray.length)];
+    //alert(random);
+    document.getElementById("message").innerHTML=random;
+}
+
     return (
       <div id="parent">
 
@@ -79,23 +86,17 @@ function Notes() {
 
           <div id="randomclicker">
 
-            <p> Click the button to get a random item from an array!</p>
+              <p> Click the button to get a random item from an array!</p>
 
-            {function GetValue() {
-                var myarray= new Array("item1","item2","item3");
-                var random = myarray[Math.floor(Math.random() * myarray.length)];
-                //alert(random);
-                document.getElementById("message").innerHTML=random;
-            }
-
-            <input type="button" id="btnSearch" value="Search" onclick="GetValue();" />
-            <p id="message" ></p>
-
-
-          }
+              <input 
+              id="btnSearch" 
+              type="button" 
+              value="Search"
+              onclick={GetValue} />
+              <p id="message" ></p>
+            
             
           </div>
-
 
         </div>
 
