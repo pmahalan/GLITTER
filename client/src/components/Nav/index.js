@@ -38,13 +38,13 @@ class Nav extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
-        <Link className="navbar-brand" to="/">
+        {/* <Link className="navbar-brand" to="/">
           Auth Plate
-        </Link>
+        </Link> */}
         <div className={`${this.state.open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item ">
-              <Link style={buttonStyle} className=" btn btn-secondary" to="/public">Public Page</Link>
+              {/* <Link style={buttonStyle} className=" btn btn-secondary" to="/public">Public Page</Link> */}
               <Link style={buttonStyle} className="btn btn-danger" to="/protected">Protected Page</Link>
               <Link style={buttonStyle} className="btn btn-warning"to="/register">Register a New User</Link>
               <AuthButton/>
