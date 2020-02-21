@@ -17,7 +17,7 @@ function App() {
           </div>
       </div>
 
-    <Notes />
+    {/* <Notes /> */}
 
 {/* DO NOT DELETE THE CLOSING DIV TAG BELOW, NO MATTER WHAT. */}
 </div>
