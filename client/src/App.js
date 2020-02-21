@@ -1,6 +1,17 @@
 import React from "react";
+import {
+	BrowserRouter as Router,
+	Route,
+	Link,
+  Redirect,
+  Switch
+} from 'react-router-dom';
 import "./App.css";
-import Notes from "./pages/index"
+import Notes from "./pages/ProtectedRoute";
+import Auth from "./utils/Auth";
+import Login from "./components/Login";
+import {Container} from "./components/Grid";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -17,7 +28,9 @@ function App() {
           </div>
       </div>
 
-    {/* <Notes /> */}
+
+
+{/* <Notes /> */}
 
 {/* DO NOT DELETE THE CLOSING DIV TAG BELOW, NO MATTER WHAT. */}
 </div>

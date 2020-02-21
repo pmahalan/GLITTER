@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import DeleteBtn from "../components/DeleteBtn";
-import API from "../utils/API";
-import { List, ListItem } from "../components/List";
-import { TextArea, FormBtn } from "../components/Form";
+import DeleteBtn from "../../components/DeleteBtn";
+import API from "../../utils/API";
+import { List, ListItem } from "../../components/List";
+import { TextArea, FormBtn } from "../../components/Form";
 //import { }
 
 function Notes() {
