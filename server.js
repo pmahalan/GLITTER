@@ -10,7 +10,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const flash = require('connect-flash');
 const routes = require('./routes/index');
 /* === Set the PORT to work with deployment environment === */
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 /* === Call Express as app === */
 const app = express();
 
