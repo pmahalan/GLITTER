@@ -3,6 +3,7 @@ import DeleteBtn from "../components/DeleteBtn";
 import API from "../utils/API";
 import { List, ListItem } from "../components/List";
 import { TextArea, FormBtn } from "../components/Form";
+//import { }
 
 function Notes() {
 //   Setting our component's initial state
@@ -75,9 +76,28 @@ function Notes() {
         {/* first one */}
         <div className="column is-one-third" id="funstuff"> 
         <h1 id="yournotesheading">Other Fun Stuff</h1>
+
+          <div id="randomclicker">
+
+            <p> Click the button to get a random item from an array!</p>
+
+            {function GetValue() {
+                var myarray= new Array("item1","item2","item3");
+                var random = myarray[Math.floor(Math.random() * myarray.length)];
+                //alert(random);
+                document.getElementById("message").innerHTML=random;
+            }
+
+            <input type="button" id="btnSearch" value="Search" onclick="GetValue();" />
+            <p id="message" ></p>
+
+
+          }
+            
+          </div>
+
+
         </div>
-
-
 
 
         {/* second one */}
