@@ -94,7 +94,21 @@ function Notes() {
     API.deleteNote(id)
       .then(res => loadNotes())
       .catch(err => console.log(err));
-  }
+  };
+
+  //Updates a note 
+  function updateNote(id) {
+    API.updateNote(id,{
+      destination: formObject.destination,
+      season: formObject.season,
+      food: formObject.food,
+      activities: formObject.activities,
+      sights: formObject.sights
+    })
+    .then(res => loadNotes())
+    .catch(err => console.log(err));
+  };
+
 
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
@@ -218,6 +232,7 @@ function Notes() {
             <List>
               {notes.map(note => {
                 return (
+
                   <ListItem key={note._id}>
                     <a href={"/notes/" + note._id} id="linkcolors">
                       <strong>
@@ -235,6 +250,7 @@ function Notes() {
                     </a>
                     <br></br>
                   </ListItem>
+
                 );
               })}
             </List>

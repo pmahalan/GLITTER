@@ -16,5 +16,9 @@ export default {
   // Saves a note to the database
   saveNote: function(noteData) {
     return axios.post("/api/notes", noteData);
+  },
+  // updates a note
+  updateNote: function(id, data) {
+    return axios.update("/api/notes/" + id, data);
   }
 };
