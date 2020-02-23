@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-// import "./style.css";
-// import Login from "../LoginForm";
 import AuthButton from "../AuthButton";
+
+
 //I want to add some basic inline styling here, even though we are bringing in styles
 const buttonStyle = {
 	marginRight:10
@@ -37,7 +37,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+      <nav className="navbar" id="loginnav">
         {/* <Link className="navbar-brand" to="/">
           Auth Plate
         </Link> */}
@@ -45,8 +45,8 @@ class Nav extends Component {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item ">
               {/* <Link style={buttonStyle} className=" btn btn-secondary" to="/public">Public Page</Link> */}
-              <Link style={buttonStyle} className="btn btn-danger" to="/protected">Protected Page</Link>
-              <Link style={buttonStyle} className="btn btn-warning"to="/register">Register a New User</Link>
+              <Link style={buttonStyle} className="" to="/protected">Protected Page</Link>
+              <Link style={buttonStyle} className=""to="/register">Register a New User</Link>
               <AuthButton/>
             </li>
           

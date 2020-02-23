@@ -92,7 +92,7 @@ function Notes() {
               id="btnSearch" 
               type="button" 
               value="Search"
-              onclick={GetValue} />
+              onClick={GetValue} />
               <p id="message" ></p>
             
             
@@ -141,7 +141,7 @@ function Notes() {
              /> 
              <br></br>
 
-            <FormBtn class="button is-medium"
+            <FormBtn className="button is-medium"
               disabled={!(formObject.destination)}
               onClick={handleFormSubmit}
             >
