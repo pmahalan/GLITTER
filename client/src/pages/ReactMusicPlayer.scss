@@ -4,9 +4,9 @@
 }
 
 .player-container {
-    width: 435px;
     margin: 0 auto;
     overflow: hidden;
+    width: 80%;
 
     background-color: #EAEDEF;
     border-radius: 20px;
@@ -14,7 +14,7 @@
 }
 
 .player-cover {
-    height: 160px;
+    height: 33%;
 
     background-position: top center;
     background-size: cover;
@@ -23,6 +23,7 @@
 
 .artist-info {
     padding: 60px 35px 35px;
+    height: 33%
 }
 
 .artist-name,
@@ -45,7 +46,7 @@
 .player-progress-container {
     position: relative;
 
-    width: 365px;
+    width: 80%;
     height: 9px;
     margin: 0 auto;
 
@@ -81,7 +82,8 @@
     display: flex;
     justify-content: space-between;
     padding: 40px 0 20px;
-    width: 365px;
+    width: 80%;
+    height: 34%;
     margin: 0 auto;
 }
 
@@ -89,7 +91,7 @@
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    width: 135px;
+    width: 80%;
 }
 
 .player-btn {
