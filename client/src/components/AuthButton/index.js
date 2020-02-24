@@ -15,10 +15,11 @@ const AuthButton = withRouter(({ history }) => (
 				Logout
 			</button>
 	) : (
-    <Link  
-        className="btn btn-success"
+	<Link
+		id="navbuttontext"  
+        className=""
         to="/login"
-         >Login
+         > ⟡ Login ⟡
     </Link>
 	)
 ))

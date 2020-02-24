@@ -34,7 +34,7 @@ function App() {
 
   <Router>
 		<div>
-      <Nav className="App-header" />
+      <Nav/>
 			<Container>
 				<Switch>
 					<Route path="/login" component={Login}/>

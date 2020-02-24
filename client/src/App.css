@@ -78,7 +78,28 @@
   color: #af8202
 }
 
-/* #loginnav {
-  background-color: #4D3409;
-  color: #4D3409;
-} */
+#loginnav {
+  /* background-color: #4D3409; */
+  background-color: #F5E4DE; 
+}
+
+#navbuttontext {
+  color: #4D3409; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0 0 0 10px;
+  font-size: 20px;
+}
+
+#navitem {
+  text-align: center;
+}
+
+#loginbox {
+  color: #4D3409; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#entrybackground {
+  background-color:	goldenrod
+
+}

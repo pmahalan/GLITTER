@@ -5,7 +5,7 @@ import AuthButton from "../AuthButton";
 
 //I want to add some basic inline styling here, even though we are bringing in styles
 const buttonStyle = {
-	marginRight:10
+	marginRight:50
 };
 class Nav extends Component {
   state = {
@@ -42,12 +42,11 @@ class Nav extends Component {
           Auth Plate
         </Link> */}
         <div className={`${this.state.open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item ">
-              {/* <Link style={buttonStyle} className=" btn btn-secondary" to="/public">Public Page</Link> */}
-              <Link style={buttonStyle} className="" to="/protected">Protected Page</Link>
-              <Link style={buttonStyle} className=""to="/register">Register a New User</Link>
-              <AuthButton/>
+          <ul className="" id="wholenavbar">
+            <li className="nav-item" id="navitem">
+              <Link className="" id="navbuttontext" to="/protected"> ⟡ Protected Page ⟡  </Link>
+              <Link className="" id="navbuttontext" to="/register"> ❤ Register a New User ❤ </Link>
+              <AuthButton className="" id="navbuttontext" to="/login">  Login  </AuthButton>
             </li>
           
           </ul>
