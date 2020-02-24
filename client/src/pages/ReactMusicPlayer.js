@@ -135,35 +135,34 @@ class ReactMusicPlayer extends Component {
 
 
                 <div className="player-options">
-                    <div className="player-buttons player-controls">
-                        <button onClick={this.toggle} className="player-btn big" title="Play/Pause">
-                            <i className={playPauseClass} />
-                        </button>
 
-                        <button onClick={this.previous} className="player-btn medium" title="Previous Song">
+                        <button onClick={this.previous} className="player-btn medium" id="backbutton" title="Previous Song">
                             <i className="fa fa-backward" />
                         </button>
 
-                        <button onClick={this.next} className="player-btn medium" title="Next Song">
+                        <button onClick={this.toggle} className="player-btn big" id="playbutton" title="Play/Pause">
+                            <i className={playPauseClass} />
+                        </button>
+
+                        <button onClick={this.next} className="player-btn medium" id="fwdbutton" title="Next Song">
                             <i className="fa fa-forward" />
                         </button>
-                    </div>
 
-                    <div className="player-buttons">
-                        <button className="player-btn small volume" onClick={this.toggleMute} title="Mute/Unmute">
+                        <button className="player-btn small volume" onClick={this.toggleMute} id="tinybtn" title="Mute/Unmute">
                             <i className={volumeClass} />
                         </button>
 
-                        <button className={repeatClass} onClick={this.repeat} title="Repeat">
+                        <button className={repeatClass} onClick={this.repeat} id="tinybtn" title="Repeat">
                             <i className="fa fa-repeat" />
                         </button>
 
-                        <button className={randomClass} onClick={this.randomize} title="Shuffle">
+                        <button className={randomClass} onClick={this.randomize} id="tinybtn" title="Shuffle">
                             <i className="fa fa-random" />
                         </button>
                     </div>
 
-                </div>
+
+
             </div>
         );
     }

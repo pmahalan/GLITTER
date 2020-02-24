@@ -23,7 +23,7 @@ function App() {
   <div className="App" id="wholebackground">
 
       <div className="App-header">
-        <p>G L I T T E R</p>
+        <p id="glittertitle">G L I T T E R</p>
       </div>
 
       <div className="columns">
@@ -62,7 +62,7 @@ function App() {
 	<br></br>
 	<br></br>
 	<br></br>
-	
+
 	<p id="audrey"> ⟡  </p>  
 	<p id="audrey"> "Nothing is impossible, the word itself says 'I'm possible'!" - Audrey Hepburn </p>
 	<p id="audrey"> ⟡  </p>
