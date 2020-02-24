@@ -171,7 +171,7 @@ function Notes() {
             
           </div>
 
-          <ReactMusicPlayer songs={songs} autoplay />
+          <ReactMusicPlayer songs={songs} />
 
         </div>
 
