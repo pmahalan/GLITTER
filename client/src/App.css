@@ -63,6 +63,7 @@
 
 #yournotesheading {
   font-size: 36px;
+  text-decoration: underline;
 }
 
 #old-note-area {
@@ -122,4 +123,19 @@
 
 #glittertitle {
   width: 100%;
+}
+
+#message {
+  text-align: center;
+  font-size: 24px;
+}
+
+#btnSearch {
+  position: center;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#regularmessage {
+  font-size: 24px;
 }

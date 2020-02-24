@@ -259,19 +259,18 @@ function Notes() {
         <div className="column is-one-third" id="funstuff"> 
         <h1 id="yournotesheading">Other Fun Stuff</h1>
 
-          <div id="randomclicker">
 
-              <p> Click the button to get a random item from an array!</p>
-
-              <input 
-              id="btnSearch" 
-              type="button" 
-              value="Search"
-              onClick={GetValue} />
-              <p id="message" ></p>
-            
-            
-          </div>
+        <div id="randomclicker">
+                <p id="regularmessage"> Don't know where you wanna go? Click here for some ideas!</p>
+                <input 
+                id="btnSearch" 
+                type="button" 
+                value="Your next vacay is..."
+                onClick={GetValue} />
+                <br></br>
+                <p id="message" ></p>
+                <br></br>
+            </div>
 
           <br></br>
 
@@ -327,6 +326,9 @@ function Notes() {
               Submit
             </FormBtn>
           </form>
+
+          <br></br>
+
         </div>
 
        {/* third one */}
