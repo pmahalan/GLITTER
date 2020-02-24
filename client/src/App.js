@@ -82,6 +82,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 		)}/>
 		</div>
 	</Router>
+
 	)
 
 export default App;

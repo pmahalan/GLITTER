@@ -14,6 +14,8 @@ class RegisterForm extends React.Component {
 		console.log(`Register form props are: ${JSON.stringify(this.props)}`);
 		
 		return (
+		<div id="loginbox">
+			<br></br>
 			<Card title="Register a New User">
 				<form
 					ref={(elem) => this.form = elem}
@@ -25,13 +27,14 @@ class RegisterForm extends React.Component {
 						});
 					}}
 				>
-					<div className="form-group">
-						<input className="form-control" ref={(input) => this.usernameElem = input} type='text' name="username" placeholder='Enter Username' /><br/>
-						<input className="form-control"  ref={(input) => this.passwordElem = input} type='password' name="password" placeholder='Password' /><br/>
-						<button className="btn btn btn-primary" type='submit'>Submit</button>
+					<div className="form-group" id="entrybackground">
+						<input className="form-control" ref={(input) => this.usernameElem = input} type='text' name="username" placeholder='Enter Username' id="loginbox" /><br/>
+						<input className="form-control"  ref={(input) => this.passwordElem = input} type='password' name="password" placeholder='Password' id="loginbox" /><br/>
+						<button className="btn btn btn-primary" type='submit' id="loginbox">Submit</button>
 					</div>
 				</form>
 			</Card>
+		</div>
 		)
 	}
 }
