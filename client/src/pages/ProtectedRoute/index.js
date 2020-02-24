@@ -249,6 +249,17 @@ function Notes() {
     document.getElementById("message").innerHTML=random;
 }
 
+//THIS IS THE FUNCTION FOR THE LIFE ADVICE ARRAY.
+function GetSecondValue() {
+  var mysecondarray= new Array(
+    
+  );
+
+  var random = mysecondarray[Math.floor(Math.random() * mysecondarray.length)];
+  //alert(random);
+  document.getElementById("message").innerHTML=random;
+}
+
     return (
       <div id="parent">
 
@@ -275,6 +286,18 @@ function Notes() {
           <br></br>
 
           <ReactMusicPlayer songs={songs} />
+
+          <div id="randomclicker2">
+                <p id="regularmessage"> Spontaneous Life Advice... </p>
+                <input 
+                id="btnSearch" 
+                type="button" 
+                value="Spontaneous Life Advice"
+                onClick={GetSecondValue} />
+                <br></br>
+                <p id="message" ></p>
+                <br></br>
+            </div>
 
         </div>
 
