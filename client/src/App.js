@@ -46,6 +46,27 @@ function App() {
 		</div>
 	</Router>
 
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	
+	<p id="audrey"> ⟡  </p>  
+	<p id="audrey"> "Nothing is impossible, the word itself says 'I'm possible'!" - Audrey Hepburn </p>
+	<p id="audrey"> ⟡  </p>
+
 {/* DO NOT DELETE THE CLOSING DIV TAG BELOW, NO MATTER WHAT. */}
 </div>
 
