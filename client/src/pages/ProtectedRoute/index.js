@@ -3,7 +3,7 @@ import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/API";
 import { List, ListItem } from "../../components/List";
 import { TextArea, FormBtn } from "../../components/Form";
-import ReactMusicPlayer from "../ReactMusicPlayer";
+// import ReactMusicPlayer from "../ReactMusicPlayer";
 
 let songs = [
   {
@@ -178,7 +178,7 @@ function Notes() {
       "London, England",
       "Maui, Hawaii",
       "Montreal, Canada",
-        "Quebec, Canada",
+      "Quebec, Canada",
       "Vancouver, Canada",
       "Sao Paolo, Brazil",
       "Bogota, Columbia",
@@ -462,8 +462,8 @@ function GetSecondValue() {
           <br></br>
           <br></br>
 
-          <p id="jamsmessage"> Listen to some jams!</p>
-          <ReactMusicPlayer songs={songs} />
+          {/* <p id="jamsmessage"> Listen to some jams!</p>
+          <ReactMusicPlayer songs={songs} /> */}
 
         </div>
 
