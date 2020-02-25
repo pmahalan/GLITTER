@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const AuthButton = withRouter(({ history }) => (
 	Auth.isAuthenticated ? (
-			<button className="btn btn-danger" 
+			<button id="navbuttontext"  
 				onClick={() => {
 					Auth.signout(() => history.push('/'))
 				}}>
