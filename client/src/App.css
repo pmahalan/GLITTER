@@ -132,7 +132,6 @@
 #message {
   text-align: center;
   font-size: 24px;
-  /* background-image: url("little6.gif"); */
   height: 30px;
 }
 
@@ -177,7 +176,6 @@ width: 210px;
 #secondmessage {
   text-align: center;
   font-size: 24px;
-  /* background-image: url("little6.gif"); */
   height: 40px;
 }
 
@@ -189,7 +187,6 @@ width: 210px;
 #notesubmitbtn {
   text-align: center;
   font-size: 18px;
-  /* background-image: url("little6.gif"); */
   height: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-right: 180px;
