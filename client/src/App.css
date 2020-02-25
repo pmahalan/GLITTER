@@ -107,6 +107,7 @@
 
 #plzlogin {
   background-color:	goldenrod;
+  font-size: 20px;
   color: #4D3409; 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -128,14 +129,31 @@
 #message {
   text-align: center;
   font-size: 24px;
+  /* background-image: url("little6.gif"); */
+  height: 50px;
 }
 
 #btnSearch {
-  position: center;
-  text-align: center;
+  height: 40px;
+  /* position: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 100px;
+}
+
+#randomclicker {
+  position: center;
 }
 
 #regularmessage {
   font-size: 24px;
+}
+
+#seperator {
+  background-image: url("coffeesticker.gif");
+  height: 260px;
+  width: 288px;
 }

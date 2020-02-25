@@ -4,40 +4,47 @@ import API from "../../utils/API";
 import { List, ListItem } from "../../components/List";
 import { TextArea, FormBtn } from "../../components/Form";
 import ReactMusicPlayer from "../ReactMusicPlayer";
-//import { }
 
 let songs = [
   {
       url: 'http://tegos.kz/new/mp3_full/Redfoo_-_New_Thang.mp3',
-      cover: 'http://www.nossoarmario.com/blog/wp-content/uploads/2015/01/redfoo.jpg',
       artist: {
           name: 'Redfoo',
           song: 'New Thang'
       }
+      //Works some of the time
   },
   {
-      url: 'http://a.tumblr.com/tumblr_lpoc6cHNDP1r0jthjo1.mp3',
-      cover: 'http://www.thailandballoonfestival.com/tibf2013/images/HugoSlider1.jpg',
-      artist: {
-          name: 'Hugo',
-          song: '99 Problems'
-      }
-  },
+    url: 'http://a.tumblr.com/tumblr_mlyactVSyX1qejx3lo1.mp3',
+    artist: {
+        name: 'Daft Punk',
+        song: 'Get Lucky'
+    }
+    // WORKS
+},
+{
+  url: 'hey_baby.mp3',
+  artist: {
+      name: 'No Doubt',
+      song: 'Hey Baby'
+  }
+  // got skipped over ASAP
+},
+{
+  url: 'lion_sleeps_tonight.mp3',
+  artist: {
+      name: 'NSYNC',
+      song: 'The Lion Sleeps Tonight'
+  }
+  // got skipped over ASAP
+},
   {
-      url: 'http://claymore.france.free.fr/momo/summer love.mp3',
-      cover: 'http://myuvn.com/wp-content/uploads/2015/07/justin-timberlake-pusher-love-girl.jpg',
+      url: 'https://open.spotify.com/track/2PpruBYCo4H7WOBJ7Q2EwM',
       artist: {
-          name: 'Justin Timberlake',
-          song: 'Summer Love'
+          name: 'Outkast',
+          song: 'Hey Ya'
       }
-  },
-  {
-      url: 'http://a.tumblr.com/tumblr_mlyactVSyX1qejx3lo1.mp3',
-      cover: 'http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/06/daft-punk.jpg',
-      artist: {
-          name: 'Daft Punk',
-          song: 'Get Lucky'
-      }
+      // gets skipped over
   },
   {
       url: 'http://a.tumblr.com/tumblr_lxe7hpIUPA1r3ne4ro1.mp3',
@@ -45,23 +52,17 @@ let songs = [
           name: 'Michael Buble',
           song: 'Feeling Good'
       }
-  },
-  {
-      url: 'http://dl.tak3da.com/download/1394/03/The Weeknd - Can t Feel My Face [320].mp3',
-      cover: 'http://www.clickgratis.com.br/fotos-imagens/the-weekend/aHR0cDovL3d3dy5iaWxsYm9hcmQuY29tL2ZpbGVzL3N0eWxlcy9wcm9tb182NTAvcHVibGljL21lZGlhL3RoZS13ZWVrZW5kLXRoZS1oaWxscy12aWRlby1iaWxsYm9hcmQtNjUwLmpwZw==.jpg',
-      artist: {
-          name: 'The Weekend',
-          song: 'Can\'t Fell My Face'
-      }
+      // WORKS
   },
   {
       url: 'http://midnightoilco.net/sitebuildercontent/sitebuilderfiles/metallicafuel.mp3',
-      cover: 'http://imagens.ailhadometal.com/2015/03/Metallica3.png',
       artist: {
           name: 'Metallica',
           song: 'Fuel'
       }
+      // WORKS
   }
+
 ];
 
 function Notes() {
@@ -325,6 +326,7 @@ function GetSecondValue() {
 
         <div id="randomclicker">
                 <p id="regularmessage"> Don't know where you wanna go? Click here for some ideas!</p>
+                <br></br>
                 <input 
                 id="btnSearch" 
                 type="button" 
@@ -337,20 +339,21 @@ function GetSecondValue() {
 
           <br></br>
 
-          <ReactMusicPlayer songs={songs} />
+          <div id="seperator">
+          </div>
 
           <div id="randomclicker2">
                 <p id="regularmessage"> Spontaneous Life Advice... </p>
                 <input 
                 id="secondbtnSearch" 
                 type="secondbutton" 
-                value="Spontaneous Life Advice"
+                defaultValue="Spontaneous Life Advice"
                 onClick={GetSecondValue} />
                 <br></br>
                 <p id="secondmessage" ></p>
-                <br></br>
             </div>
 
+            <ReactMusicPlayer songs={songs} />
         </div>
 
 
