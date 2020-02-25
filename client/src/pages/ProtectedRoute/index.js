@@ -342,18 +342,21 @@ function GetSecondValue() {
           <div id="seperator">
           </div>
 
+          <br></br>
+          <br></br>
+
           <div id="randomclicker2">
-                <p id="regularmessage"> Spontaneous Life Advice... </p>
+                <p id="regularmessage"> Need to change things up? </p>
                 <input 
                 id="secondbtnSearch" 
                 type="secondbutton" 
                 defaultValue="Spontaneous Life Advice"
                 onClick={GetSecondValue} />
-                <br></br>
+
                 <p id="secondmessage" ></p>
+                <br></br>
             </div>
 
-            <ReactMusicPlayer songs={songs} />
         </div>
 
 
@@ -406,6 +409,9 @@ function GetSecondValue() {
           </form>
 
           <br></br>
+
+          <p id="regularmessage"> Listen to some jams!</p>
+          <ReactMusicPlayer songs={songs} />
 
         </div>
 

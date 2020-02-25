@@ -23,6 +23,7 @@ function App() {
   <div className="App" id="wholebackground">
 
       <div className="App-header">
+		  <p>  </p>
         <p id="glittertitle">G L I T T E R</p>
       </div>
 
