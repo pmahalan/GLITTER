@@ -478,7 +478,12 @@ function GetSecondValue() {
                   <ListItem key={note._id}>
                     <a href={"/notes/" + note._id} id="linkcolors">
                       <strong>
-                      <DeleteBtn onClick={() => deleteNote(note._id)} />  {note.destination}
+                      <DeleteBtn onClick={(e) => {
+                        e.preventDefault();
+                        deleteNote(note._id)
+                      }} 
+                        />  
+                        {note.destination}
                       </strong>
                       <br></br>
                       {note.season} 

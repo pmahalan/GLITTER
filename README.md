@@ -1,18 +1,23 @@
 # GLITTER
 
-## Elevator Pitch
+## Description/Elevator Pitch
 
+## Motivation/User Story:
+AS A person with dreams of seeing the world,
 
+I WANT TO have a platform where I can daydream "out loud",
 
-## User Story:
-AS AN   
+SO I CAN have an outlet to edify my dreams.
 
-I WANT TO    
+"All our dreams can come true, if we have the courage to pursue them." - Walt Disney
 
-SO I CAN    
+"The future belongs to those who believe in the beauty of their dreams." - Elanor Roosevelt
  
+## Responsibiliites
 
-## Process   
+User-End:
+
+Server-End:
 
 New Technologies:
 - 
@@ -23,24 +28,16 @@ Databases:
 Database workbench:
 - Robo 3T
 
-#### Overcoming Challenges
-
-
-
-#### Successes
-
-
-
-
-## Demo
-
-![App Screenshot](./public/assets/1.jpg "Picture of Website")
-![App Screenshot](./public/assets/1.jpg "Picture of Website")
-![App Screenshot](./public/assets/1.jpg "Picture of Website")
-
+## Challenges
 
 ## Directions for Future Development
 
+
+## Screenshots
+
+![App Screenshot](./public/assets/1.jpg "Picture of Website")
+![App Screenshot](./public/assets/1.jpg "Picture of Website")
+![App Screenshot](./public/assets/1.jpg "Picture of Website")
 
 
 ## Links
