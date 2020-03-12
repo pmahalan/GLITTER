@@ -397,7 +397,7 @@ function GetSecondValue() {
                 <p id="changeupmessage"> Need to change things up? </p>
                 <input 
                 id="secondbtnSearch" 
-                type="secondbutton" 
+                type="button" 
                 defaultValue="Spontaneous Life Advice"
                 onClick={GetSecondValue} />
 
